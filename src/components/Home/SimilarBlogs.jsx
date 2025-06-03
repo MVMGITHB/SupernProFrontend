@@ -24,7 +24,7 @@ const SimilarBlogs = ({ blogs }) => {
                   {property.title}
                 </h3>
               </div>
-              <div className="w-20 h-20 flex-shrink-0">
+              <div className="w-25 h-25 flex-shrink-0">
                 <img
                   src={`${base_url}${property.image}`}
                   alt={property.title}

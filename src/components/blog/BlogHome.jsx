@@ -13,9 +13,7 @@ export const BlogHome = ({ url }) => {
          try {
             const data =await axios.get(`${base_url}/api/blog/getOneBlogCategoryslug/${url}`)
             setCards(data.data)
-            console.log(data.data)
          } catch (error) {
-             console.log(error)
          }
       })
 

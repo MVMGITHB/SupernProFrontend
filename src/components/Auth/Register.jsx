@@ -34,7 +34,6 @@ const Register = () => {
 
     try {
       const response = await axios.post(`${base_url}/api/auth/register`, formData);
-      console.log("registered data--", response.data);
       setSuccessMsg("Registration successful!");
       setTimeout(() => {
         router.push('/login');

@@ -47,7 +47,6 @@ const page = async ({ params }) => {
       `${base_url}/api/blog/getOneBlogByslug/${slugName}`
     );
     const data1 = response.data;
-    console.log(data1)
    
     return (
       <div>
