@@ -14,7 +14,7 @@ export const ArticleHome = ({ data }) => {
 
 
         <h1 className="text-2xl text-gray-600  font-bold text-center mb-4">{data.title}</h1>
-          <img src={`${base_url}${data.image}`} alt="8th Pay Commission" className="w-full h-auto rounded-md" />
+          <img src={`${base_url}${data.image}`} alt="8th Pay Commission" className="w-full md:w-[800] h-auto md:h-[400] rounded-md" />
     <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
   <div>
     <h3 className="text-lg text-gray-700">
