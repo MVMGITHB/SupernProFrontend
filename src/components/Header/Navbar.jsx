@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { useAuth } from '@/components/context/auth';
+import SerachCategory from './SearchCategory';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-[1440px] mx-auto px-4 py-2 flex justify-between items-center">
         <Link href="/" className="flex-shrink-0">
           <img
-            src="/Supoernprop_Logo1-removebg-preview.png"
+            src="/SuperNpro.webp"
             alt="logo"
             className="h-20 md:h-24 object-contain"
           />
@@ -44,12 +45,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <input
-            type="text"
-            placeholder="Search..."
-            className="px-3 py-1 border rounded-lg text-gray-800 focus:outline-none"
-          />
-
+       <SerachCategory/>
           {auth?.user ? (
             <>
               <span className="text-gray-700">{auth.user.name}</span>
@@ -83,11 +79,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-full px-3 py-2 border rounded-lg text-black focus:outline-none"
-          />
+        <SerachCategory/>
 
           {auth?.user ? (
             <>

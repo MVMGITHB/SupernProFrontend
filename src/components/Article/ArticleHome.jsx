@@ -54,19 +54,27 @@ export const ArticleHome = ({ data }) => {
         ) : (
           <></>
         )}
-       <div>
-           <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
-  {data?.faqs?.map((item) => (
-    <div key={item._id} className="mb-4">
-      <h3 className="font-semibold text-[20px] text-gray-900">Q: {item.ques}</h3>
-      <p className="text-gray-800 text-[18px]">A: {item.ans}</p>
+     <div>
+  {data?.faqs?.length > 0 && (
+    <>
+      <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+      {data.faqs.map((item) => (
+        <div key={item._id} className="mb-4">
+          <h3 className="font-semibold text-[20px] text-gray-900">Q: {item.ques}</h3>
+          <p className="text-gray-800 text-[18px]">A: {item.ans}</p>
+        </div>
+      ))}
+    </>
+  )}
+
+  {data?.conclusion && (
+    <div className="mb-2">
+      <h2 className="text-2xl font-bold">Conclusion:</h2>
+      <p className="text-[20px] text-black">{data.conclusion}</p>
     </div>
-  ))}
- <div className="mb-2">
-    <h2 className="text-2xl font-bold">Conclusion:</h2>
-  <p className="text-[20px] text-black  ">{data?.conclusion}</p>
- </div>
+  )}
 </div>
+
 
       </div>
 

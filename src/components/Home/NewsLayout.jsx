@@ -20,7 +20,7 @@ export default function NewsLayout({ blog }) {
         <Carousel
           showThumbs={false}
           showArrows={true}
-          autoPlay
+          autoPlay  
           infiniteLoop
           showIndicators={false}
           onChange={(index) => setCurrentIndex(index)}
