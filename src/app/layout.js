@@ -17,36 +17,46 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "SuperNPro",
-  description: "SuperNPro is your go-to destination for insightful and engaging blogs across finance, lifestyle, tech, and more.",
+  description:
+    "SuperNPro is your go-to destination for insightful and engaging blogs across finance, lifestyle, tech, and more.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-      
-
       <head>
+        <meta name="robots" content="noindex, nofollow" />
 
-        
-      <meta name="robots" content="noindex, nofollow"></meta>
-       <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-WWMXEYD53X"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WWMXEYD53X');
+            `,
+          }}
+        />
+
+        {/* Fonts (if still needed via CDN) */}
+        <style>
+          {`@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');`}
+        </style>
       </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
         <AuthProvider>
           <Navbar />
-    
-
-        {children}
-
-        <Footer />
+          {children}
+          <Footer />
         </AuthProvider>
-
       </body>
     </html>
   );

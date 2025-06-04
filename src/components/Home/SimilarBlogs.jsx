@@ -2,7 +2,6 @@ import Link from "next/link";
 import { base_url } from "../Helper/helper";
 
 const SimilarBlogs = ({ blogs }) => {
-
   const getRandomBlogs = (array, count) => {
     const shuffled = [...array].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
@@ -17,7 +16,11 @@ const SimilarBlogs = ({ blogs }) => {
       </h2>
       <div className="space-y-2">
         {randomBlogs.map((property) => (
-          <Link key={property?.id} href={`/${property?.category?.slug}/${property?.slug}`} className="block">
+          <Link
+            key={property?.id}
+            href={`/${property?.category?.slug}/${property?.slug}`}
+            className="block"
+          >
             <div className="bg-[#eeeef5] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 p-2 flex items-center justify-between gap-4">
               <div className="flex-1">
                 <h3 className="text-[12px] font-medium text-blue-800 hover:text-[#4F1C51] transition-colors line-clamp-3">

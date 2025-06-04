@@ -9,7 +9,7 @@ import SerachCategory from './SearchCategory';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [auth, setAuth] = useAuth();
-
+  
   const handleLogout = () => {
     setAuth({ user: null, token: "" });
     localStorage.removeItem("auth");
@@ -36,7 +36,6 @@ export default function Navbar() {
             className="h-20 md:h-24 object-contain"
           />
         </Link>
-
         <div className="hidden md:flex items-center gap-4 text-[16px] font-semibold">
           {navItems.map(({ href, label }) => (
             <Link key={href} href={href} className="relative group w-fit">
@@ -44,7 +43,6 @@ export default function Navbar() {
               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#4F1C51] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-
        <SerachCategory/>
           {auth?.user ? (
             <>
@@ -70,7 +68,6 @@ export default function Navbar() {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
-
       {isOpen && (
         <div className="md:hidden bg-white text-center py-4 px-4 space-y-3 border-t border-gray-200">
           {navItems.map(({ href, label }) => (
@@ -78,9 +75,7 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-
         <SerachCategory/>
-
           {auth?.user ? (
             <>
               <div className="text-gray-700">{auth.user.name}</div>

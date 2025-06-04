@@ -7,7 +7,6 @@ import { base_url } from "../Helper/helper";
 
 export default function NewsLayout({ blog }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const sortedBlogs = blog?.slice().sort((a, b) => a.id - b.id) || [];
 
   return (
