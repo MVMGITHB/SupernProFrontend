@@ -17,12 +17,15 @@ const Summary = ({ blog }) => {
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
         <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md">
+          <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
           <img
             src="https://mvmbs.com/images/tata_side_image.webp"
             alt="Tata Neu Event"
             className="w-full object-cover rounded-md"
           />
+          </Link>
         </div>
+        
       </aside>
 
       <main className="w-full md:w-3/5 flex flex-col gap-4 p-2 mt-[-25px]">

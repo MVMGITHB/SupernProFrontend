@@ -18,7 +18,9 @@ export default function NewsLayout({ blog }) {
 
       {/* Main Section */}
       <main className="w-full md:w-3/5 p-2 rounded-lg">
-        <h2 className="text-lg font-bold mb-4 text-gray-800">Trending Topics</h2>
+        <h2 className="text-lg font-bold mb-4 text-gray-800 ">
+          Trending Topics
+        </h2>
 
         <Carousel
           showThumbs={false}
@@ -59,11 +61,13 @@ export default function NewsLayout({ blog }) {
       {/* Right Sidebar */}
       <aside className="w-full md:w-1/5 rounded-lg">
         <div className="flex flex-col gap-2">
+          <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
           <img
             src="https://mvmbs.com/images/tata_side_image.webp"
             alt="Tata Neu Event"
             className="w-full h-[480px] object-cover rounded-md"
           />
+          </Link>
         </div>
       </aside>
     </div>

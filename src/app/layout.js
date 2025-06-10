@@ -43,13 +43,12 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Fonts (if still needed via CDN) */}
-        <style>
+         <style>
           {`@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');`}
         </style>
       </head>
 
-      <body
+      <body 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AuthProvider>
@@ -61,3 +60,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+ 

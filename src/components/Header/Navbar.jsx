@@ -78,7 +78,7 @@ export default function Navbar() {
         <SerachCategory/>
           {auth?.user ? (
             <>
-              <div className="text-gray-700">{auth.user.name}</div>
+              <div className="text-gray-700">{auth?.user?.name}</div>
               <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 w-full">
                 Logout
               </button>

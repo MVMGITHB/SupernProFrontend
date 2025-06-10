@@ -24,13 +24,13 @@ export default function Popup() {
         {showClose && (
           <button
             onClick={() => setVisible(false)}
-            className="absolute top-2 right-2 lg:right-25 z-10 rounded-full p-1 transition"
+            className="absolute top-0 lg:top-2 right-2 lg:right-30 font-bold text-2xl z-10 rounded-full p-1 transition"
           >
-            <X size={22} className="text-red-300 cursor-pointer" />
+            <X size={22} className="text-black cursor-pointer" />
           </button>
         )}
         <Link
-          href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D"
+          href="http://trk.yasd.in/click?campaign_id=166&pub_id=945"
           target="_blank"
         >
           <img
