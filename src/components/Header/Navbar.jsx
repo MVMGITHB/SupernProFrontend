@@ -36,7 +36,7 @@ export default function Navbar() {
             className="h-20 md:h-24 object-contain"
           />
         </Link>
-        <div className="hidden md:flex items-center gap-4 text-[16px] font-semibold">
+        <div className="hidden md:flex items-center md:gap-2 lg:gap-4  md:text-[14px] lg:text-[14px] font-semibold">
           {navItems.map(({ href, label }) => (
             <Link key={href} href={href} className="relative group w-fit">
               {label}
