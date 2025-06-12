@@ -43,3 +43,4 @@ const SimilarBlogs = ({ blogs }) => {
 };
 
 export default SimilarBlogs;
+  
