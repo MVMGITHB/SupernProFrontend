@@ -45,7 +45,7 @@ export const BlogHome = ({ url }) => {
             />
             <div className="p-2 text-center">
               <Link
-                href={`${card?.category?.slug}/${card?.slug}`}
+                href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}
                 className="text-md font-semibold text-[#091057] hover:text-[#313561] transition-colors duration-200"
               >
                 {card.title}
