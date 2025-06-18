@@ -32,7 +32,7 @@ export const ArticleHome = ({ data }) => {
           className="w-full md:w-[800] h-auto md:h-[400] rounded-md mb-4"
         />
 
-         <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI,0 JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"/>
+         <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"/>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
           <div>
             <h3 className="text-lg text-gray-700">
@@ -136,7 +136,7 @@ export const ArticleHome = ({ data }) => {
       )}
     </div>
 
-<AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, 0 JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"/>
+<AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"/>
        
         {/* <div>
           {data?.faqs?.length > 0 && (
