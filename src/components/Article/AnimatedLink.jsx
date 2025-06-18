@@ -17,12 +17,18 @@ export default function AnimatedLink({text,link}) {
 
   return (
     <div className={`text-center p-1 border rounded-[10px] transition-colors duration-500 ${borderColors[colorIndex]}`}>
-      <Link
-        href={link}
-        className={`${textColors[colorIndex]} font-bold text-3xl transition-colors duration-500`}
-      >
-        {text}
-      </Link>
+
+ <a
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`${textColors[colorIndex]} font-bold text-2xl transition-colors duration-500`}
+>
+  {text} <br />
+  Apply Now
+</a>
+
+
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default function Popup() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-2">
-      <div className="relative   rounded-2xl overflow-hidden">
+      <div className="relative min-w-[65%] flex justify-center  rounded-2xl overflow-hidden">
 
          {showClose && (
           <button
