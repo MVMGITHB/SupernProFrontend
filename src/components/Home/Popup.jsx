@@ -20,24 +20,29 @@ export default function Popup() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-2">
-      <div className="relative w-full max-w-[95%] sm:max-w-[600px] md:max-w-3xl lg:max-w-5xl rounded-2xl overflow-hidden">
-        {showClose && (
+      <div className="relative   rounded-2xl overflow-hidden">
+
+         {showClose && (
           <button
             onClick={() => setVisible(false)}
-            className="absolute top-0 lg:top-2 right-2 lg:right-30 font-bold text-2xl z-10 rounded-full p-1 transition"
+            className="absolute cursor-pointer top-3 right-10 z-20 bg-white/80 hover:bg-white rounded-full p-1 transition"
           >
-            <X size={22} className="text-black cursor-pointer" />
+            <X size={20} className="text-black" />
           </button>
         )}
+        
         <Link
           href="https://trk.clickgenie.in/click?campaign_id=33298&pub_id=4562&p1={your-transaction-id}&source={your-sub-aff-id}"
           target="_blank"
+          className="relative"
         >
           <img
             src="/pop1.png"
             alt="Popup"
-            className="w-full h-auto max-h-[60vh] object-contain rounded-2xl"
+            className=" h-auto max-h-[60vh] object-contain rounded-2xl "
           />
+
+         
         </Link>
       </div>
     </div>
