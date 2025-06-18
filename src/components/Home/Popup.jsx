@@ -37,7 +37,7 @@ export default function Popup() {
           className="relative"
         >
           <img
-            src="/pop1.png"
+            src="/pop2.png"
             alt="Popup"
             className=" h-auto max-h-[60vh] object-contain rounded-2xl "
           />
