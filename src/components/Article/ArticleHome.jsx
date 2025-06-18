@@ -89,7 +89,7 @@ export const ArticleHome = ({ data }) => {
         <div className="w-[200px] mx-auto">
           <button
           onClick={() => setShowFull(true)}
-          className="mt-4 text-blue-600 text-center font-medium underline"
+          className="mt-4 mb-4 cursor-pointer text-blue-600  text-2xl text-center font-medium underline"
         >
           Read More
         </button>
