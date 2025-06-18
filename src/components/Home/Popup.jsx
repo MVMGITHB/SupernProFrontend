@@ -30,11 +30,11 @@ export default function Popup() {
           </button>
         )}
         <Link
-          href="http://trk.yasd.in/click?campaign_id=166&pub_id=945"
+          href="https://trk.clickgenie.in/click?campaign_id=33298&pub_id=4562&p1={your-transaction-id}&source={your-sub-aff-id}"
           target="_blank"
         >
           <img
-            src="/Pop up.webp"
+            src="/pop1.png"
             alt="Popup"
             className="w-full h-auto max-h-[60vh] object-contain rounded-2xl"
           />
