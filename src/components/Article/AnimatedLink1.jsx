@@ -1,9 +1,10 @@
 'use client';
+import BlinkingButton from './BlinkingButton';
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import BlinkingButton from './BlinkingButton';
-export default function AnimatedLink({text,link,apply}) {
+
+export default function AnimatedLink1({text,link,apply}) {
   const textColors = ['text-blue-300', 'text-violet-950', 'text-red-900'];
   const borderColors = ['border-blue-300', 'border-violet-950', 'border-red-900'];
   const [colorIndex, setColorIndex] = useState(0);
@@ -24,8 +25,12 @@ export default function AnimatedLink({text,link,apply}) {
   rel="noopener noreferrer"
   className={`${textColors[colorIndex]} font-bold text-xl transition-colors duration-500`}
 >
-  {text} <br />
+  {text?.map((item, index) => (
+        <div key={index}>{item}</div>
+      ))} <br />
+  {/* {apply} */}
   <BlinkingButton/>
+  
 </a>
 
 

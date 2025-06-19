@@ -43,7 +43,7 @@ console.log("pathname",pathname)
                     apply={"Get Price"}
                   />
                 ) : (
-                  <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
+                  <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
                 )}
 
         
@@ -77,10 +77,11 @@ console.log("pathname",pathname)
 
           <div>
             <img
-              src={`${base_url}${data?.author?.image}`}
-              alt={data?.author?.name || "Author"}
-              className="rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
-            />
+  src={`${base_url}${data?.author?.image}`}
+  alt={data?.author?.name || "Author"}
+  className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
+/>
+
           </div>
         </div>
         {/* {data ? (
@@ -158,7 +159,7 @@ console.log("pathname",pathname)
             apply={"Get Price"}
           />
         ) : (
-          <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
+          <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
         )}
 
 

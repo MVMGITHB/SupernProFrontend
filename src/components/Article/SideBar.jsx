@@ -1,7 +1,16 @@
 import Link from 'next/link';
 import AnimatedLink from './AnimatedLink';
+import AnimatedLink1 from './AnimatedLink1';
 
 export const SideBar = ({ pathname }) => {
+
+   const data = [
+    "Get",
+    "Free Gift Voucher",
+    "Free Lounge Access",
+    "Benefits Of 1,21,799",
+  
+  ]
   return (
     <div className="w-full flex flex-col gap-6 p-2">
       <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
@@ -14,13 +23,19 @@ export const SideBar = ({ pathname }) => {
             apply={"Get Price"}
           />
         ) : (
-          <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
-            <img
-              src="https://mvmbs.com/images/bjj2.webp"
-              alt="Advertisement"
-              className="w-full object-cover"
-            />
-          </Link>
+
+          <AnimatedLink1
+            text={data}
+            link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"
+            apply={"Get Price"}
+          />
+          // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
+          //   <img
+          //     src="https://mvmbs.com/images/bjj2.webp"
+          //     alt="Advertisement"
+          //     className="w-full object-cover"
+          //   />
+          // </Link>
         )}
 
 
@@ -45,14 +60,23 @@ export const SideBar = ({ pathname }) => {
             />
           </Link></>
         ) : (
-          <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
+
+           <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
 
             <img
-              src="https://mvmbs.com/images/bjj1.webp"
-              alt="Promotion"
+              src="https://mvmbs.com/images/tata_side_image.webp"
+              alt="Ad Image"
               className="w-full  object-cover"
             />
           </Link>
+          // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
+
+          //   <img
+          //     src="https://mvmbs.com/images/bjj1.webp"
+          //     alt="Promotion"
+          //     className="w-full  object-cover"
+          //   />
+          // </Link>
         )}
 
 

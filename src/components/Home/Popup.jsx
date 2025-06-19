@@ -32,12 +32,12 @@ export default function Popup() {
         )}
         
         <Link
-          href="https://trk.clickgenie.in/click?campaign_id=33298&pub_id=4562&p1={your-transaction-id}&source={your-sub-aff-id}"
+          href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"
           target="_blank"
           className="relative"
         >
           <img
-            src="/pop2.png"
+            src="/pop6.png"
             alt="Popup"
             className=" h-auto max-h-[60vh] object-contain rounded-2xl "
           />
