@@ -74,6 +74,11 @@ body {
   scrollbar-width: none; 
 }
 
+.scrollbar-hide {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Important for momentum scrolling on iOS */
+}
+
 /* .carousel .control-next.control-arrow:before{
   color: red !important;
   background-color: gray;

@@ -25,7 +25,7 @@ console.log("pathname",pathname)
         <SideBar pathname={pathname}/>
       </div>
 
-      <div className=" w-full md:w-3/5 shadow-md p-4 order-1 md:order-2 h-[150vh]  overflow-y-auto scrollbar-hide">
+      <div className=" w-full md:w-3/5 shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
         <h1 className="text-2xl text-gray-600  font-bold text-center mb-4">
           {data.title}
         </h1>

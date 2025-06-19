@@ -22,16 +22,9 @@ export const RightSideBar = ({ pathname }) => {
           </Link>
         )}
 
-
-
       </div>
 
-
-
-
       <div className="bg-white shadow-md rounded-xl overflow-hidden">
-
-
 
         {pathname === '/automobile/fastag-annual-pass' ? (
           <>
