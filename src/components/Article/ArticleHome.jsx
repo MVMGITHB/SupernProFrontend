@@ -40,9 +40,10 @@ console.log("pathname",pathname)
                   <AnimatedLink
                     text={"Get 40% Higher  Price For Your Old Car With This Simple Hack"}
                     link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
+                    apply={"Get Price"}
                   />
                 ) : (
-                  <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"/>
+                  <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
                 )}
 
         
@@ -154,9 +155,10 @@ console.log("pathname",pathname)
           <AnimatedLink
             text={"Sell Your Old Car At 40% Higher Price With This Simple Hack"}
             link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
+            apply={"Get Price"}
           />
         ) : (
-          <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"/>
+          <AnimatedLink text={"India's BEST RuPay Card Get 1.5% BACK on UPI, zero JOINING FEE "} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
         )}
 
 

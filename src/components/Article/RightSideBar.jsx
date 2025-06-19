@@ -10,6 +10,7 @@ export const RightSideBar = ({ pathname }) => {
           <AnimatedLink
             text={"Increased Offer Generated For Your Old Car, Bid Valid For Two Hours Only"}
             link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
+            apply={"Get Price"}
           />
         ) : (
           <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
