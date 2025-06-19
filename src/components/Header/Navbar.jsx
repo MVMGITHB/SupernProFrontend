@@ -20,6 +20,7 @@ export default function Navbar() {
     { href: "/politics", label: "Politics" },
     { href: "/finance", label: "Finance" },
     { href: "/automobile", label: "Automobile" },
+    { href: "/entertainment", label: "Entertainment" },
     { href: "/real-estate", label: "Real Estate" },
     { href: "/fashion-lifestyle", label: "Fashion & Lifestyle" },
     { href: "/technology", label: "Technology" },
