@@ -25,7 +25,7 @@ export default function AnimatedLink({text,link,apply}) {
   className={`${textColors[colorIndex]} font-bold text-xl transition-colors duration-500`}
 >
   {text} <br />
-  <BlinkingButton/>
+  <BlinkingButton apply={apply}/>
 </a>
 
 

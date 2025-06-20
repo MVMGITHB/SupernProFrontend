@@ -10,7 +10,7 @@ import AnimatedLink from "./AnimatedLink";
 export const ArticleHome = ({ data }) => {
 
 const pathname = usePathname();
-console.log("pathname",pathname)
+// console.log("pathname",data)
   const [showFull, setShowFull] = useState(false);
 
   if (!data?.content) return null;
@@ -22,7 +22,7 @@ console.log("pathname",pathname)
   return (
     <div className=" mx-auto p-4 flex flex-col md:flex-row gap-6">
       <div className=" w-full md:w-1/5 order-2 md:order-1">
-        <SideBar pathname={pathname}/>
+        <SideBar pathname={pathname} data={data} />
       </div>
 
       <div className=" w-full md:w-3/5 shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
@@ -34,9 +34,19 @@ console.log("pathname",pathname)
           alt="8th Pay Commission"
           className="w-full md:w-[800] h-auto md:h-[400] rounded-md mb-4"
         />
+         
 
-
-          {pathname === '/automobile/fastag-annual-pass' ? (
+         {
+          data?.Ads[2]?(<>
+                <AnimatedLink
+                    text={data?.Ads[2].text1[0]}
+                    link={data?.Ads[2].link1}
+                    apply={data?.Ads[2].text2}
+                  />
+          
+          </>):(
+            <>
+              {pathname === '/automobile/fastag-annual-pass' ? (
                   <AnimatedLink
                     text={"Get 40% Higher  Price For Your Old Car With This Simple Hack"}
                     link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
@@ -45,6 +55,15 @@ console.log("pathname",pathname)
                 ) : (
                   <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
                 )}
+            
+            </>
+          )
+         }
+
+
+
+
+        
 
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
@@ -151,17 +170,29 @@ console.log("pathname",pathname)
       )}
     </div>
 
-
-            {pathname === '/automobile/fastag-annual-pass' ? (
-          <AnimatedLink
-            text={"Sell Your Old Car At 40% Higher Price With This Simple Hack"}
-            link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
-            apply={"Get Price"}
-          />
-        ) : (
-          <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"} link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
-        )}
-
+     {
+          data?.Ads[3]?(<>
+                <AnimatedLink
+                    text={data?.Ads[3].text1[0]}
+                    link={data?.Ads[3].link1}
+                    apply={data?.Ads[3].text2}
+                  />
+          
+          </>):(
+            <>
+              {pathname === '/automobile/fastag-annual-pass' ? (
+                  <AnimatedLink
+                    text={"Get 40% Higher  Price For Your Old Car With This Simple Hack"}
+                    link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
+                    apply={"Get Price"}
+                  />
+                ) : (
+                  <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
+                )}
+            
+            </>
+          )
+         }
 
        
         {/* <div>
@@ -192,7 +223,7 @@ console.log("pathname",pathname)
       </div>
 
       <div className=" w-full md:w-1/5  order-3 md:order-3 ">
-        <RightSideBar pathname={pathname}/>
+        <RightSideBar pathname={pathname} data={data}/>
       </div>
     </div>
   );

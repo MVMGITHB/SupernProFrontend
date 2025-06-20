@@ -29,7 +29,7 @@ export default function AnimatedLink1({text,link,apply}) {
         <div key={index}>{item}</div>
       ))} <br />
   {/* {apply} */}
-  <BlinkingButton/>
+  <BlinkingButton apply={apply}/>
   
 </a>
 

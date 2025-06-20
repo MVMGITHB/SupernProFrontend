@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 
-export default function BlinkingButton() {
+export default function BlinkingButton({apply}) {
   const colors = ["bg-red-500", "bg-yellow-400", "bg-green-500"];
   const [colorIndex, setColorIndex] = useState(0);
 
@@ -15,7 +15,7 @@ export default function BlinkingButton() {
 
   return (
     <button className={`text-white px-2 py-1 rounded cursor-pointer ${colors[colorIndex]}`}>
-      Get Offer
+      {apply}
     </button>
   );
 }

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import AnimatedLink from './AnimatedLink';
 import AnimatedLink1 from './AnimatedLink1';
-export const RightSideBar = ({ pathname }) => {
+export const RightSideBar = ({ pathname,data }) => {
 
-  const data = [
+  const data1 = [
     "Get",
     "Free Gift Voucher",
     "Free Lounge Access",
@@ -14,6 +14,18 @@ export const RightSideBar = ({ pathname }) => {
     <div className="w-full flex flex-col gap-6 p-2">
       <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
 
+
+
+        {
+          data?.Ads[1] ? (<>
+                      <AnimatedLink1
+                        text={data?.Ads[1].text1}
+                        link={data?.Ads[1].link1}
+                        apply={data?.Ads[1].text2}
+                      />
+          
+                    </>) :(<>
+                    
         {pathname === '/automobile/fastag-annual-pass' ? (
           <AnimatedLink
             text={"Increased Offer Generated For Your Old Car, Bid Valid For Two Hours Only"}
@@ -22,11 +34,14 @@ export const RightSideBar = ({ pathname }) => {
           />
         ) : (
          <AnimatedLink1
-            text={data}
+            text={data1}
             link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"
             apply={"Get Price"}
           />
         )}
+                    </>)
+        }
+
 
       </div>
 
