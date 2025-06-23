@@ -1,11 +1,16 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { ArticleHome } from './ArticleHome';
 import { usePathname } from 'next/navigation';
 import Popup from '../Home/Popup';
 import Popup1 from '../Home/Popup1';
+import Popup3 from '../Home/Pop3'
 
  const Article = ({data}) => {
+
+
+console.log(data)
+  
 
   const pathname = usePathname();
   return (
@@ -14,7 +19,8 @@ import Popup1 from '../Home/Popup1';
        {pathname === '/automobile/fastag-annual-pass' ? (
           <Popup1/>
         ) : (
-           <Popup/>
+           <Popup3 data={data}/>
+        
         )}
         
          <ArticleHome data={data}/>
