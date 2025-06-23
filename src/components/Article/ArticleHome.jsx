@@ -16,9 +16,31 @@ const pathname = usePathname();
   if (!data?.content) return null;
 
   // Split HTML content by first </p>
-  const splitIndex = data.content.indexOf("</p>") + 4;
-  const firstPart = data.content.slice(0, splitIndex);
-  const remainingPart = data.content.slice(splitIndex);
+  // const splitIndex = data.content.indexOf("</p>") + 4;
+  // const firstPart = data.content.slice(0, splitIndex);
+  // const remainingPart = data.content.slice(splitIndex);
+function splitAfterThirdParagraph(content) {
+  let splitIndex = -1;
+  let count = 0;
+  let searchIndex = 0;
+
+  while (count < 3) {
+    const index = content.indexOf("</p>", searchIndex);
+    if (index === -1) break; // less than 3 paragraphs
+    splitIndex = index + 4; // move past </p>
+    searchIndex = splitIndex;
+    count++;
+  }
+
+  const firstPart = content.slice(0, splitIndex);
+  const remainingPart = content.slice(splitIndex);
+
+  return { firstPart, remainingPart };
+}
+
+// Usage
+const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
+
   return (
     <div className=" mx-auto p-4 flex flex-col md:flex-row gap-6">
       <div className=" w-full md:w-1/5 order-2 md:order-1">
@@ -66,43 +88,7 @@ const pathname = usePathname();
         
 
         
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
-          <div>
-            <h3 className="text-lg text-gray-700">
-              Author:{" "}
-              <strong>
-                {" "}
-                <Link
-                  href={`/author/${data?.author?.slug}`}
-                  className="text-blue-600"
-                >
-                  {data?.author?.name}
-                </Link>
-              </strong>
-            </h3>
-            <h3 className="text-sm text-gray-600">
-              Created At:{" "}
-              <strong>
-                {new Date(data?.author?.createdAt).toLocaleDateString()}
-              </strong>
-            </h3>
-            <h3 className="text-sm text-gray-600">
-              Updated At:{" "}
-              <strong>
-                {new Date(data?.author?.updatedAt).toLocaleDateString()}
-              </strong>
-            </h3>
-          </div>
 
-          <div>
-            <img
-  src={`${base_url}${data?.author?.image}`}
-  alt={data?.author?.name || "Author"}
-  className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
-/>
-
-          </div>
-        </div>
         {/* {data ? (
           <>
             <div
@@ -193,6 +179,45 @@ const pathname = usePathname();
             </>
           )
          }
+
+
+                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
+          <div>
+            <h3 className="text-lg text-gray-700">
+              Author:{" "}
+              <strong>
+                {" "}
+                <Link
+                  href={`/author/${data?.author?.slug}`}
+                  className="text-blue-600"
+                >
+                  {data?.author?.name}
+                </Link>
+              </strong>
+            </h3>
+            <h3 className="text-sm text-gray-600">
+              Created At:{" "}
+              <strong>
+                {new Date(data?.author?.createdAt).toLocaleDateString()}
+              </strong>
+            </h3>
+            <h3 className="text-sm text-gray-600">
+              Updated At:{" "}
+              <strong>
+                {new Date(data?.author?.updatedAt).toLocaleDateString()}
+              </strong>
+            </h3>
+          </div>
+
+          <div>
+            <img
+  src={`${base_url}${data?.author?.image}`}
+  alt={data?.author?.name || "Author"}
+  className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
+/>
+
+          </div>
+        </div>
 
        
         {/* <div>
