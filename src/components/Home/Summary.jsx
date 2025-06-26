@@ -17,7 +17,7 @@ const Summary = ({ blog }) => {
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
         <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md">
-          <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
+          <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
           <img
             src="https://mvmbs.com/images/tata_side_image.webp"
             alt="Tata Neu Event"
