@@ -9,8 +9,9 @@ export const SideBar = ({ pathname, data }) => {
     "Free Gift Voucher",
     "Free Lounge Access",
     "Benefits Of 1,21,799",
-
   ]
+
+  
   return (
     <div className="w-full flex flex-col gap-6 p-2">
       <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
@@ -35,7 +36,7 @@ export const SideBar = ({ pathname, data }) => {
 
               <AnimatedLink1
                 text={data1}
-                link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"
+                link="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
                 apply={"Get Price"}
               />
 
@@ -69,7 +70,7 @@ export const SideBar = ({ pathname, data }) => {
           </Link></>
         ) : (
 
-          <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
+          <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
 
             <img
               src="https://mvmbs.com/images/tata_side_image.webp"
