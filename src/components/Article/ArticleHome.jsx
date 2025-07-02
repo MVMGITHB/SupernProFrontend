@@ -195,7 +195,7 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
                 </Link>
               </strong>
             </h3>
-            <h3 className="text-sm text-gray-600">
+            {/* <h3 className="text-sm text-gray-600">
               Created At:{" "}
               <strong>
                 {new Date(data?.author?.createdAt).toLocaleDateString()}
@@ -206,17 +206,17 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
               <strong>
                 {new Date(data?.author?.updatedAt).toLocaleDateString()}
               </strong>
-            </h3>
+            </h3> */}
           </div>
 
-          <div>
+          {/* <div>
             <img
   src={`${base_url}${data?.author?.image}`}
   alt={data?.author?.name || "Author"}
   className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
 />
 
-          </div>
+          </div> */}
         </div>
 
        
