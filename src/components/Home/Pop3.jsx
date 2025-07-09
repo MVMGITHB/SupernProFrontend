@@ -55,18 +55,43 @@ export default function Popup3({ data }) {
                         /></>)
                     }
 
-                    {
-                        data.images[0] ? (<><img
+                      
+
+                      {
+                          data.images[0] && data.images[1] &&(
+
+                            <img
+                            src={`${base_url}${data.images[1]}`}
+                            alt="Popup"
+                            className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
+                            />
+                          )
+                      }
+                    
+                      {
+                          data.images[0] && !data.images[1] &&(
+
+                            <img
                             src={`${base_url}${data.images[0]}`}
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
-                        /></>) : (<><img
+                            />
+                          )
+                      }
+                    
+                      {
+                          !data.images[0] && !data.images[1] &&(
+
+                            <img
                             src="/pop6.png"
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
-                        /></>)
-                    }
+                        />
+                          )
+                      }
+                    
 
+                   
 
 
                 </Link>
