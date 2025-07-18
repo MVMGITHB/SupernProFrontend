@@ -49,7 +49,7 @@ export default function Popup3({ data }) {
                             alt="Popup"
                             className=" hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
                         /></>) : (<> <img
-                            src="/pop6.png"
+                            src="/image1.png"
                             alt="Popup"
                             className="hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
                         /></>)
@@ -83,7 +83,7 @@ export default function Popup3({ data }) {
                           !data.images[0] && !data.images[1] &&(
 
                             <img
-                            src="/pop6.png"
+                            src="/image1.png"
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
                         />
