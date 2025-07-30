@@ -62,7 +62,7 @@ export const RightSideBar = ({ pathname,data }) => {
           <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
 
             <img
-              src="https://mvmbs.com/images/tata_side_image.webp"
+              src="../tataNew.jpeg"
               alt="Ad Event"
               className="w-full  object-cover"
             />

@@ -68,9 +68,9 @@ export default function NewsLayout({ blog }) {
             target="_blank"
           >
             <img
-              src="https://mvmbs.com/images/tata_side_image.webp"
+              src="./tataNew.jpeg"
               alt="Tata Neu Event"
-              className="w-full h-[480px] object-cover rounded-md"
+              className="w-full h-[480px] object-contain rounded-md"
             />
           </Link>
         </div>

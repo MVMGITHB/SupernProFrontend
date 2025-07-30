@@ -19,7 +19,7 @@ const Summary = ({ blog }) => {
         <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md">
           <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
           <img
-            src="https://mvmbs.com/images/tata_side_image.webp"
+            src="./tataNew.jpeg"
             alt="Tata Neu Event"
             className="w-full object-cover rounded-md"
           />

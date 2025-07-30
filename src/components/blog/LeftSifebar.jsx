@@ -8,7 +8,7 @@ export const LeftSidebar = () => {
                   <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
 
         <img
-          src="https://mvmbs.com/images/tata_side_image.webp"
+          src="./tataNew.jpeg"
           alt="Advertisement"
           className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
         />
@@ -20,7 +20,7 @@ export const LeftSidebar = () => {
                   <Link href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D" target="_blank">
 
         <img
-          src="https://mvmbs.com/images/tata_side_image.webp"
+          src="./tataNew.jpeg"
           alt="Featured Content"
           className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
         />
