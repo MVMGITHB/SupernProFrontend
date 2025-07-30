@@ -70,7 +70,7 @@ export default function NewsLayout({ blog }) {
             <img
               src="./tataNew.jpeg"
               alt="Tata Neu Event"
-              className="w-full h-[480px] object-contain rounded-md"
+              className="w-full h-[480px] object-conver rounded-md"
             />
           </Link>
         </div>

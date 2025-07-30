@@ -16,12 +16,12 @@ const Summary = ({ blog }) => {
   return (
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
-        <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md">
+        <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md ">
           <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
           <img
             src="./tataNew.jpeg"
             alt="Tata Neu Event"
-            className="w-full object-cover rounded-md"
+            className="w-full object-cover rounded-md "
           />
           </Link>
         </div>
