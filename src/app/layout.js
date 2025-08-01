@@ -32,6 +32,8 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-WWMXEYD53X"
         ></script>
+
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -39,6 +41,20 @@ export default function RootLayout({ children }) {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-WWMXEYD53X');
+            `,
+          }}
+        />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17218636408"></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ''AW-17218636408');
             `,
           }}
         />
