@@ -49,15 +49,16 @@ export default function RootLayout({ children }) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17218636408"></script>
 
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', ''AW-17218636408');
-            `,
-          }}
-        />
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17218636408');
+    `,
+  }}
+/>
+
 
          <style>
           {`@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');`}
