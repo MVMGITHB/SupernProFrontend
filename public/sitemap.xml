@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://supernpro.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url><loc>https://supernpro.com/politics</loc></url>
+  <url><loc>https://supernpro.com/finance</loc></url>
+  <url><loc>https://supernpro.com/automobile</loc></url>
+  <url><loc>https://supernpro.com/entertainment</loc></url>
+  <url><loc>https://supernpro.com/real-estate</loc></url>
+  <url><loc>https://supernpro.com/fashion-lifestyle</loc></url>
+  <url><loc>https://supernpro.com/technology</loc></url>
+  <url><loc>https://supernpro.com/sports</loc></url>
+  <url><loc>https://supernpro.com/health</loc></url>
+  <url><loc>https://supernpro.com/travel</loc></url>
+  <url><loc>https://supernpro.com/food</loc></url>
+
+</urlset>
