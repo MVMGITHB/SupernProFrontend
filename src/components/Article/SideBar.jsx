@@ -16,7 +16,7 @@ export const SideBar = ({ pathname, data }) => {
     <div className="w-full flex flex-col gap-6 p-2">
       <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
 
-
+{/* 
         {
           data?.Ads[0] ? (<>
             <AnimatedLink1
@@ -42,7 +42,7 @@ export const SideBar = ({ pathname, data }) => {
 
             )}
           </>)
-        }
+        } */}
 
 
 
@@ -59,7 +59,7 @@ export const SideBar = ({ pathname, data }) => {
 
 
 
-        {pathname === '/automobile/fastag-annual-pass' ? (
+        {/* {pathname === '/automobile/fastag-annual-pass' ? (
           <><Link href="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01" target="_blank">
 
             <img
@@ -68,25 +68,25 @@ export const SideBar = ({ pathname, data }) => {
               className="w-full  object-cover"
             />
           </Link></>
-        ) : (
+        ) : ( */}
 
-          <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
+          {/* // <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
 
-            <img
-              src="../tataNew.jpeg"
-              alt="Ad Image"
-              className="w-full  object-cover"
-            />
-          </Link>
-          // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
-
-          //   <img
-          //     src="https://mvmbs.com/images/bjj1.webp"
-          //     alt="Promotion"
+          //   <img */}
+          {/* //     src="../tataNew.jpeg"
+          //     alt="Ad Image"
           //     className="w-full  object-cover"
           //   />
           // </Link>
-        )}
+          // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
+
+          //   <img */}
+          {/* //     src="https://mvmbs.com/images/bjj1.webp"
+          //     alt="Promotion"
+          //     className="w-full  object-cover"
+          //   />
+          // </Link> */}
+        {/* )} */}
 
 
       </div>
