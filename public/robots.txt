@@ -1,5 +1,18 @@
 User-agent: *
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: CCBot
+Allow: /
+
+
 Sitemap: https://supernpro.com/sitemap.xml
 Host: https://supernpro.com
+Sitemap: https://supernpro.com/llms.txt
