@@ -15,13 +15,13 @@ console.log(data)
   const pathname = usePathname();
   return (
     <div>
-
+{/* 
        {pathname === '/automobile/fastag-annual-pass' ? (
           <Popup1/>
         ) : (
            <Popup3 data={data}/>
         
-        )}
+        )} */}
         
          <ArticleHome data={data}/>
        

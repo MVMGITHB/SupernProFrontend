@@ -4,7 +4,7 @@ import Popup from '../Home/Popup'
 export const Blog = ({url}) => {
     return (
         <div>
-            <Popup/>
+            {/* <Popup/> */}
             <BlogHome url={url}/>
         </div>
     )

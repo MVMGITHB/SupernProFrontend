@@ -21,7 +21,7 @@ export const Home = () => {
   },[])
   return (
     <div>   
-     <Popup/>
+     {/* <Popup/> */}
      <NewsLayout blog={blog}/>
      <Summary blog={blog}/>
     </div>
